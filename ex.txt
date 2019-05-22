@@ -1,0 +1,16 @@
+child           parent
+-----------------------
+Min Li          Qing Li
+Min Li          Qi Yang
+Jin Li          Qing Li
+Jin Li          Qi Yang
+Qing Li         XinXin Chen
+Qing Li         Fu Li
+Qi Yang         Lili Zhang
+Qi Yang         Jie Wu
+Daya Wu         Lili Zhang
+Daya Wu         Jie Wu
+Pin Wu          Daya Wu
+Pin Wu          An Chen
+Hang Wu         Daya Wu
+Hang Wu         An Chen
