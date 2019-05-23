@@ -126,7 +126,7 @@ Hang Wu         Jie Wu
 
 1. 在Map阶段，把父 - 子关系和相反的子 - 父关系以键值对的方式进行提取，并在值之前加上一个标识符，能够识别出谁是父谁是子即可。具体做法参照图：
    
-   ![image\MapReduce](image\MapReduce.png)
+   ![原理](https://i.loli.net/2019/05/23/5ce69f20b09dc23211.png)
 
 2. Reduce阶段前会经过一个shuffle，把key相同的放在同一个reduce任务中。在同个key的value数组中，我们可以根据前缀获得爷孙关系。
 
@@ -297,20 +297,18 @@ hadoop dfs -cat /relation_output/*
 ```
 
 ```powershell
-grandchild      grandparent	
------------------------------	
-Pin Wu          Lili Zhang	
-Pin Wu          Jie Wu	
-Hang Wu         Lili Zhang	
-Hang Wu         Jie Wu	
-Jin Li          Lili Zhang	
-Jin Li          Jie Wu	
-Min Li          Lili Zhang	
-Min Li          Jie Wu	
-Jin Li          XinXin Chen	
-Jin Li          Fu Li	
-Min Li          XinXin Chen	
-Min Li          Fu Li	
+grandchild      grandparent    
+-----------------------------    
+Pin Wu          Lili Zhang    
+Pin Wu          Jie Wu    
+Hang Wu         Lili Zhang    
+Hang Wu         Jie Wu    
+Jin Li          Lili Zhang    
+Jin Li          Jie Wu    
+Min Li          Lili Zhang    
+Min Li          Jie Wu    
+Jin Li          XinXin Chen    
+Jin Li          Fu Li    
+Min Li          XinXin Chen    
+Min Li          Fu Li    
 ```
-
-
